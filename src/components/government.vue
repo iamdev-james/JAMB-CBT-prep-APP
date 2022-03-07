@@ -90,7 +90,7 @@ export default {
       'Content-Type': 'application/json',
       AccessToken: 'ALOC-72d6ec289a578cace8c3'
     }
-    fetch('https://questions.aloc.ng/api/v2/q/40?subject=government', { headers })
+    fetch('https://questions.aloc.com.ng/api/v2/q/40?subject=government', { headers })
       .then(response => {
         return response.json()
       })
