@@ -110,6 +110,8 @@ export default {
 }
 .question_box {
   position: relative;
+  color: #004823;
+  background: #F6FFFB;
   width: 70vw;
   align-self: center;
   justify-self: center;
@@ -159,15 +161,14 @@ export default {
   padding: 10px 15px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #333;
-  box-shadow: 1px 1px 2px #333;
-}
+  border-bottom: 1px solid #004823;
+  box-shadow: 0px 0.5px 2px #004823;}
 #answer:hover {
-  background: orange;
-  color: aliceblue;
+  background: #92FFC2;
+  color: black;
 }
 .selected {
-  background-color: #fcba05;
+  background-color: #21E6D5;
   color: black;
   border: 1px solid blue;
 }

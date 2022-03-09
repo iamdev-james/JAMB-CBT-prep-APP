@@ -77,11 +77,7 @@ export default {
    font-size: 20px;
  }
  .p_styling:hover {
-   background: lightgreen;
-   border: 1px solid black;
-   color: white;
-   box-shadow: 2px 1px 2px whitesmoke;
-   transition: all 1s ease;
+   font-size: 22px;
  }
   .br-bottom {
    margin-left: 17%;

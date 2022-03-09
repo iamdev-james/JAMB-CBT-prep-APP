@@ -1,9 +1,15 @@
 <template>
 <main id="main">
     <Header @toggleCalcClass = 'changeCalcClass($event)'/>
-  <div>
-    <div>
-      <h3>Hey {{ user_name }}</h3>
+  <div id="main-container">
+    <div class='intro'>
+      <div class='intro-content'>
+        <p>Hi,</p>
+        <h4>{{ user_name }}</h4>
+      </div>
+      <div>
+         <img :src="require('@/assets/jambShowcase.jpg')"  class='intro-img' alt="UTME_showcase">
+      </div>
     </div>
     <div id="subject_predisplay">
       <h4 @click="select_subject_1 = true, select_subject_2 = false, select_subject_3 = false, select_subject_4 = false">{{ subject_1 }}</h4>
@@ -99,12 +105,29 @@ export default {
   box-sizing: border-box;
 }
 #main{
-  height: 100vh;
+  height: auto;
   font-family: 'Dosis', sans-serif;
   font-size: 19px;
-  background: #575652;
-  color: #fcba05;
+  color: #000000;
   overflow-x: hidden;
+}
+#main-container {
+  width: 80vw;
+  margin: auto;
+}
+.intro {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-content {
+  text-align: left;
+  color: #454242;
+}
+.intro-img {
+  height: 70px;
+  width: 130px;
 }
 .component_styling{
   display: flex;
@@ -112,14 +135,15 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background: rgb(105, 82, 53);
+  background: #F6FFFB;
 }
 .flw{
   font-kerning: unset;
 }
 #subject_predisplay{
   padding: 5px 15px;
-  background: rgb(4, 134, 134);
+  background: #DAF5E6;
+  border-radius: 7px 7px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -146,5 +170,18 @@ export default {
   font-weight: 700;
   background: whitesmoke;
   padding: 20px auto;
+}
+@media screen and (max-width: 420px) {
+  #main-container {
+    width: 95vw;
+    margin: auto;
+  }
+  .intro-img {
+    height: 55px;
+    width: 90px;
+  }
+  #subject_predisplay{
+    font-size: 14px;
+  }
 }
 </style>

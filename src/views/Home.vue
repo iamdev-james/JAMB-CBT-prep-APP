@@ -144,6 +144,9 @@ export default {
   justify-content: space-between;
   word-wrap: break-word;
 }
+h2 {
+  color: #ffffff;
+}
 #form-container {
   background: #004823;
   padding: 35px;
