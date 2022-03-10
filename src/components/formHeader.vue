@@ -88,9 +88,31 @@ export default {
    border-radius: 20px;
   }
  @media (max-width: 600px) {
-   #container2 {
-     display: flex;
-     flex-direction: column;
-   }
+  #container2 {
+   width: 99%;
+ }
+ .header-content {
+   flex: 1;
+ }
+ .inline {
+   font-size: 17px;
+ }
+ #Imglogo {
+   margin-top: 2px;
+   margin-left: 0.5%;
+   height: 50px;
+   width: 30%;
+ }
+ #examCategory {
+   flex: 1;
+ }
+ .MR-17 {
+   margin-right: 5px;
+ }
+ .p_styling {
+   font-size: 14px;
+   margin-bottom: 5px;
+   padding: 2px 5px;
+ }
  }
 </style>

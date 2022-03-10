@@ -4,7 +4,7 @@
     <formHeader />
   <div id='form-container'>
     <h2>Welcome to UTME Prep</h2>
-    <p><i>Prepare for JAMB HERE AND GO ON TO get excellent grades in all your Subject</i></p>
+    <p class="h2-p"><i>Prepare for JAMB HERE AND GO ON TO get excellent grades in all your Subject</i></p>
     <h4>Fill the form below to commence</h4>
     <form @submit.prevent="submit">
       <h5>Your name here:</h5>
@@ -128,9 +128,6 @@ export default {
 #container{
   overflow: hidden;
   font-family: 'Comic Neue', cursive;
-  background-image: url('../assets/jambShowcase.jpg');
-  background-repeat: no-repeat;
-  background-position: center 25%;
 }
 #main{
   font-size: 19px;
@@ -204,5 +201,24 @@ select{
 }
 .textError {
   color: red;
+}
+@media screen and (max-width: 500px) {
+  #main{
+    height: auto;
+  }
+  input#name{
+    width: 17rem;
+  }
+  h2 {
+  margin-bottom: 15px;
+  }
+  .h2-p {
+  margin-bottom: 20px;
+  }
+  #form-container {
+  margin-top: 25px;
+  height: 100%;
+  width: 78%;
+}
 }
 </style>
